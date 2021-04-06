@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "224775340674",
+    "project_id": "perfectstructureprojecct",
+    "storage_bucket": "perfectstructureprojecct.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:224775340674:android:2dd84a9335b373e5a8ea9b",
+        "android_client_info": {
+          "package_name": "com.perfectstructureprojecct"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "224775340674-rn13vrnanagti1gnqksahmfdo5vk2qlr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAPJbIHDdE6GoHGKK5iN3Zs0_wBUq3hS7o"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "224775340674-rn13vrnanagti1gnqksahmfdo5vk2qlr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
