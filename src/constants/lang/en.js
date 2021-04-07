@@ -13,7 +13,9 @@ export default{
     SEARCH :"Search",
     CHART:"CHART",
     ZOOM :"Zoom",
-    QR_CODE :"QR Code"
+    QR_CODE :"QR Code",
+    OPEN_SCANNER:"Open Scanner",
+    CLOSE_SCANNER:"Close Scanner",
 
 
 
