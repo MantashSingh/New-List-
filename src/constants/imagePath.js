@@ -12,5 +12,9 @@ export default{
     user:require("../assets/images/user.png"),
     dot:require('../assets/images/dot.png'),
     search:require("../assets/images/search.png"),
-    menu :require("../assets/images/menu.png")
+    menu :require("../assets/images/menu.png"),
+    image1:require("../assets/images/ic_img11.png"),
+    image2:require("../assets/images/ic_img12.png"),
+    image3:require("../assets/images/ic_img13.png"),
+    image4:require("../assets/images/ic_img14.png"),
 }

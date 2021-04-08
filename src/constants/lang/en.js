@@ -16,6 +16,7 @@ export default{
     QR_CODE :"QR Code",
     OPEN_SCANNER:"Open Scanner",
     CLOSE_SCANNER:"Close Scanner",
+    MESSAGES:"Messages"
 
 
 

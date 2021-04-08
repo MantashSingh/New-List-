@@ -11,8 +11,9 @@ function Header(props) {
   return (
     <View style={{ backgroundColor:!!themeColor ? themeColor : colors.themeColor , marginBottom:0 ,   flexDirection:'row'}} >
       
-      {!!showDrawer&&
+      
       <TouchableOpacity onPress={()=>_openDrawer()} >
+      {!!showDrawer?
       <Image source={imagePath.menu} 
       style={{
           width: 30,
@@ -21,9 +22,19 @@ function Header(props) {
           marginHorizontal: moderateScaleVertical(20),
           tintColor: "white",
         
-        }}/>
-    </TouchableOpacity>
+        }}/>:<Image source={imagePath.backIcon} 
+        style={{
+            width: 30,
+            height: 30,
+            marginVertical: moderateScaleVertical(10),
+            marginHorizontal: moderateScaleVertical(20),
+            tintColor: "white",
+          
+          }}/>
+
       }
+    </TouchableOpacity>
+      
       
       <Text
         style={{

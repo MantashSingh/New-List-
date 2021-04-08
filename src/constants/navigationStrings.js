@@ -9,6 +9,8 @@ export default{
     GRAPH :"Graph",
     ZOOM_IN : "Zoom In",
     QR_CODE : "Qr Code",
+    MESSAGES: "Messages",
+    CHAT :"Chat"
 
 
 }
