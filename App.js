@@ -10,15 +10,18 @@ import types from './src/redux/types';
 
 import SplashScreen from 'react-native-splash-screen'
 import { getFCMToken } from './src/utils/pushNotification';
+import socketServices from './src/utils/socketService';
+
 const { dispatch } = store;
 export default class App extends Component {
   componentDidMount() {
     getFCMToken()
 
+
     
     getUserData().then((userData) => {
       if (userData) {
-        
+        socketServices.initializeSocket(userData.accessToken)
         dispatch({
           type: types.OTP_VERIFY,
           payload: userData 
@@ -28,6 +31,9 @@ export default class App extends Component {
       
       else{SplashScreen.hide();}
     })
+
+
+
     
     
     

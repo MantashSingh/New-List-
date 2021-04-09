@@ -3,7 +3,7 @@ const { width, height } = Dimensions.get('window');
 
 const guidelineBaseWidth = 375;
 const guidelineBaseHeight = 812;
-
+//change name of moderateScaleVertical to ?????
 const scale = size => (width / guidelineBaseWidth) * size;
 const verticalScale = size => (height / guidelineBaseHeight) * size;
 const moderateScale = (size, factor = 0.5) => size + (scale(size) - size) * factor;

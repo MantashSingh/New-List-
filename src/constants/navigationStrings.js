@@ -10,7 +10,8 @@ export default{
     ZOOM_IN : "Zoom In",
     QR_CODE : "Qr Code",
     MESSAGES: "Messages",
-    CHAT :"Chat"
+    CHAT :"Chat",
+    DRAWER_ROUTES :"Drawer Routes"
 
 
 }
