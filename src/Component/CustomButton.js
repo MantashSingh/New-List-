@@ -2,21 +2,16 @@ import React from 'react';
 import {View, Text, TouchableOpacity, StyleSheet} from 'react-native';
 import {connect} from 'react-redux';
 import colors from '../styles/colors';
+import fontFamily from '../styles/fontFamily';
 import Loader from './Loader';
 
 function CustomButton(props) {
-  const {themeColor, buttonText, onButtonCLick, isvalid} = props;
+  const {themeColor="", buttonText="", onButtonCLick=()=>{}, isvalid=""} = props;
 
   return(
   <View>
     <TouchableOpacity
-      style={{
-        backgroundColor: !!themeColor ? themeColor : colors.themeColor,
-        height: 50,
-        marginHorizontal: 30,
-        borderRadius: 10,
-        marginTop: 10,
-      }}
+      style={{...styles.buttonTouch,backgroundColor: !!themeColor ? themeColor : colors.themeColor,}}
       onPress={() => onButtonCLick()}>
       
 
@@ -39,5 +34,14 @@ const styles = StyleSheet.create({
     fontSize: 18,
     textAlign: 'center',
     marginVertical: 12,
+    fontFamily:fontFamily.se
   },
+  buttonTouch:{
+    
+    height: 50,
+    marginHorizontal: 30,
+    borderRadius: 10,
+    marginTop: 10,
+  }
+
 });

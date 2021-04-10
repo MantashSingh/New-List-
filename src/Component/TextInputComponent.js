@@ -16,16 +16,7 @@ function TextInputComponent(props) {
   } = props;
   return (
     <TextInput
-      style={{
-        borderColor: !!themeColor ? themeColor : colors.themeColor,
-        borderWidth: 0.4,
-        marginTop: 10,
-        marginHorizontal:!!marginHor?5:30,
-        paddingLeft: 20,
-        fontSize: 18,
-        backgroundColor: colors.textInputBg,
-        borderRadius: 10,
-      }}
+      style={{...styles.input , borderColor: !!themeColor ? themeColor : colors.themeColor,marginHorizontal:!!marginHor?5:30,}}
       placeholder={placeholder}
       onChangeText={onChangeText}
       secureTextEntry={secureTextEntry}
@@ -33,7 +24,17 @@ function TextInputComponent(props) {
       value={value}
       keyboardType={keyboardType}></TextInput>
   );
-}
+}const styles = StyleSheet.create({
+  input:{
+    borderWidth: 0.4,
+    marginTop: 10,
+    paddingLeft: 20,
+    fontSize: 18,
+    backgroundColor: colors.textInputBg,
+    borderRadius: 10,
+  }
+})
+
 const mapStateToProps = state => {
   return {
     themeColor: state.auth.themeColor,

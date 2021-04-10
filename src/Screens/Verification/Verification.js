@@ -18,6 +18,7 @@ import OTPTextView from 'react-native-otp-textinput';
 import strings from '../../constants/lang';
 import colors from '../../styles/colors';
 import CustomButton from '../../Component/CustomButton';
+import fontFamily from '../../styles/fontFamily';
 
 export default class VerificationScreen extends Component {
   constructor(props) {
@@ -113,16 +114,19 @@ export default class VerificationScreen extends Component {
 
 const styles = StyleSheet.create({
   sentCode: {
+    fontFamily:fontFamily.regular,
     textAlign: 'center',
     fontSize: 20,
   },
   phone: {
+    fontFamily:fontFamily.bold,
     textAlign: 'center',
     fontSize: 18,
     marginVertical: 5,
-    fontWeight: 'bold',
+   
   },
   footer1: {
+    fontFamily:fontFamily.regular,
     textAlign: 'center',
     marginVertical: 50,
   },

@@ -29,11 +29,11 @@ export default class Graph extends Component {
             <ScrollView>
                  <Header textData={strings.CHART} showDrawer={true}  _openDrawer={this._openDrawer}/>
                 <View style={{marginHorizontal:5}}>
-                    <Text style={styles.chartHeading}>AreaChart</Text>
+                    <Text style={styles.chartHeading}>{strings.AREA_CHART}</Text>
                 <AreaChartComp  areaChart={areaChart}/>
-                <Text style={styles.chartHeading}>StackedArea</Text>
+                <Text style={styles.chartHeading}>{strings.STACKED_CHART}</Text>
                 <StackedAreaGraphComp/>
-                <Text style={styles.chartHeading}>ProgressCircle</Text>
+                <Text style={styles.chartHeading}>{strings.PROGRESS_CIRCLE}</Text>
                 <ProgressCircleGraph />
 
 

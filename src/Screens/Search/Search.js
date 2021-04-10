@@ -10,6 +10,7 @@ import {getCurrentLocation} from '../../utils/healperFunctions';
 import Geolocation from 'react-native-geolocation-service';
 import {connect} from 'react-redux';
 import { scale } from '../../styles/responsiveSize';
+import colors from '../../styles/colors';
 
 class Search extends Component {
   constructor(props) {
@@ -82,7 +83,7 @@ class Search extends Component {
             marginHor={true}
           />
           <View style={styles.loader}>
-            <Loader isvalid={isLoading} loadColor={'black'} size={"small"} />
+            <Loader isvalid={isLoading} loadColor={colors.loaderBlack} size={"small"} />
           </View>
         </View>
 

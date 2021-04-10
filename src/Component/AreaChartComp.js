@@ -1,6 +1,7 @@
 import React from 'react'
 import { AreaChart, Grid } from 'react-native-svg-charts'
 import * as shape from 'd3-shape'
+import { StyleSheet } from 'react-native'
  
  export default function AreaChartComp(props) {
      
@@ -8,9 +9,9 @@ import * as shape from 'd3-shape'
  
         return (
             <AreaChart
-                style={{ height: 200 }}
+                style={styles.hei}
                 data={areaChart}
-                contentInset={{ top: 30, bottom: 30 }}
+                contentInset={styles.contentInset}
                 curve={shape.curveNatural}
                 svg={{ fill: 'rgba(134, 65, 244, 0.8)' }}
             >
@@ -18,3 +19,11 @@ import * as shape from 'd3-shape'
             </AreaChart>
         )
     }
+    
+    const styles = StyleSheet.create({
+        hei:{ 
+            height: 200
+         },
+         contentInset:{ top: 30, bottom: 30 }
+    })
+    

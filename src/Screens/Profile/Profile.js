@@ -80,7 +80,7 @@ export default class Profile extends Component {
     const {isMenuModalVisible, colors, selected} = this.state;
 
     return (
-      <View style={{flex: 1}}>
+      <View style={styles.flex1}>
         <Header
           textData={strings.PROFILE}
           showDrawer={true}  _openDrawer={this._openDrawer}/>
@@ -99,7 +99,7 @@ export default class Profile extends Component {
           transparent
           onRequestClose={() => this._closeModal()}
           visible={isMenuModalVisible}>
-          <View style={{flex: 1, backgroundColor: 'rgba(0,0,0,0.5)'}}>
+          <View style={styles.flex1}>
             <FlatList
               data={colors}
               showsVerticalScrollIndicator={false}
@@ -126,4 +126,7 @@ const styles = StyleSheet.create({
     marginTop: 'auto',
     marginBottom: 'auto',
   },
+  flex1:{
+    flex:1
+  }
 });

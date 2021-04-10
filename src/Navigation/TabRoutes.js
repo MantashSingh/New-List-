@@ -30,10 +30,7 @@ function TabRoutes(props) {
         options={{
         tabBarIcon: ({ focused }) => (
           <Image source={imagePath.list}
-              style={{width: 25,
-                height: 25,
-                marginTop: 10,  
-                tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : "gray",}}
+              style={{...styles.icon , tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : colors.unfocussedTabIcon,}}
           />
         )}}
         />
@@ -44,10 +41,7 @@ function TabRoutes(props) {
         options={{
         tabBarIcon: ({ focused }) => (
           <Image source={imagePath.search}
-              style={{width: 25,
-                height: 25,
-                marginTop: 10,  
-                tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : "gray",}}
+          style={{...styles.icon , tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : colors.unfocussedTabIcon,}}
           />
         )}}
         />
@@ -72,10 +66,7 @@ function TabRoutes(props) {
         options={{
           tabBarIcon: ({ focused }) => (
             <Image source={imagePath.profile}
-                style={{width: 25,
-                  height: 25,
-                  marginTop: 10,  
-                  tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : "gray",}}
+            style={{...styles.icon , tintColor: focused ? (!!themeColor?themeColor:colors.themeColor) : colors.unfocussedTabIcon,}}
             />
           )}}
       />
@@ -95,7 +86,11 @@ const mapStateToProps=state=>{
 export default connect(mapStateToProps)(TabRoutes);
 
 const styles = StyleSheet.create({
-  Icon: {
-    
-  },
+  icon: {
+    width: 25,
+      height: 25,
+      marginTop: 10,  
+      
+    }
+  
 });

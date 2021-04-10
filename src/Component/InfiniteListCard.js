@@ -14,7 +14,7 @@ import colors from '../styles/colors';
 import imagePath from '../constants/imagePath';
 
 function InfiniteListCard(props) {
-  const {data, themeColor} = props;
+  const {data="", themeColor=""} = props;
   return (
     //   <View style={{
     //     flex:1,

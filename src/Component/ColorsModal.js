@@ -7,7 +7,7 @@ import actions from "../redux/actions"
 import imagePath from '../constants/imagePath'
 
 
-export default function ColorsModal( {data , onSelect , selected}) {
+export default function ColorsModal( {data="" , onSelect=()=>{} , selected=""}) {
 
     const selecteid=(id)=>{
         onSelect(id)

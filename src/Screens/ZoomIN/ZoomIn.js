@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { Image, Dimensions , View } from 'react-native';
+import { Image, Dimensions , View ,StyleSheet} from 'react-native';
 import ImageZoom from 'react-native-image-pan-zoom';
 import imagePath from '../../constants/imagePath';
 import Header from '../../Component/Header'
@@ -20,7 +20,7 @@ export default class ZoomIn extends Component {
                        cropHeight={Dimensions.get('window').height}
                        imageWidth={200}
                        imageHeight={200}>
-                <Image style={{width:200, height:200}}
+                <Image style={styles.zoomImage}
                        source={imagePath.facebook}/>
             </ImageZoom>
             </View>
@@ -28,4 +28,6 @@ export default class ZoomIn extends Component {
     }
 }
 
-// const styles = StyleSheet.create({})
+const styles = StyleSheet.create({
+    zoomImage:{width:200, height:200}
+})
